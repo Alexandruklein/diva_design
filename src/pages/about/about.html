@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Diva Psychic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="about-header">
+    <img src="assets/img/Untitled-1.png" alt="ionic logo">
+  </div>
+  <div padding class="about-info">
+    <ion-item (click)="callMe()">
+      <ion-icon name='call' item-start style="color: #32db64"></ion-icon>
+      Call Dilani
+    </ion-item>
+    <ion-item (click)="linkTo('http://dilanidiva.com')">
+      <ion-icon name='cart' item-start></ion-icon>
+      Place an order
+    </ion-item>
+
+    <ion-item (click)="linkTo('http://dilanidiva.com/mailing-list')">
+      <ion-icon name='mail' item-start style="color: #d03e84"></ion-icon>
+      Mailing Lists
+    </ion-item>
+
+    <ion-item (click)="linkTo('http://dilanidiva.com/about-dilani-2')">
+      <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+      About Dilani
+    </ion-item>
+  </div>
+</ion-content>
