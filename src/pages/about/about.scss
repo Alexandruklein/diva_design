@@ -1,15 +1,25 @@
 .about-header {
   width: 100%;
-  min-height: 150px;
+  min-height: 100%;
   text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  z-index: -1;
+  display: block;
+  position: fixed;
 }
 
 .about-header img {
-  max-width: 100%;
   min-height: 100%;
+  max-width: 100%;
   margin: 0 auto;
+  z-index: -1;
+  display: block;
 }
-
 .about-info p {
   color: #697072;
   text-align: left;
@@ -34,4 +44,11 @@
 .ios .about-info ion-icon {
   width: auto;
   margin-right: 10px;
+}
+.fab-ios{
+    color: #fff;
+    background-color: #267337;
+}
+.fab-ios-in-list{
+    background-color: #488aff;
 }
