@@ -9,10 +9,28 @@
 
 <ion-content>
   <div class="about-header">
-    <img src="assets/img/Untitled-1.png" alt="ionic logo">
+    <img src="assets/img/DilaniDiva.png" alt="ionic logo">
+    <ion-content>
+  <!-- Real floating action button, fixed. It will not scroll with the content -->
+    <ion-fab right bottom>
+      <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="top">
+        <button ion-fab (click)="linkTo('http://dilanidiva.com/videos/')"><ion-icon ios="logo-youtube" md="logo-youtube"></ion-icon></button>
+        <button ion-fab (click)="linkTo('https://www.facebook.com/dilanidivaspiritualguru')"><ion-icon name="logo-facebook"></ion-icon></button>
+        <button ion-fab (click)="linkTo('https://twitter.com/dilanidiva?lang=en')"><ion-icon name="logo-twitter"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidivapoetry.com/')"><ion-icon ios="ios-link" md="md-link"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidiva.com')"><ion-icon name="logo-googleplus"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidiva.com/about-dilani-2/her-sessions/')"><ion-icon name="md-share"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidiva.com')"><ion-icon ios="ios-information" md="md-information"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://h.theapp.mobi/app_privacy_terms.html')"><ion-icon ios="ios-lock" md="md-lock"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+
+</ion-content>
   </div>
-  <div padding class="about-info">
-    <ion-item (click)="callMe()">
+
+<!--   <div padding class="about-info"> -->
+<!--     <ion-item (click)="callMe()">
       <ion-icon name='call' item-start style="color: #32db64"></ion-icon>
       Call Dilani
     </ion-item>
@@ -29,6 +47,6 @@
     <ion-item (click)="linkTo('http://dilanidiva.com/about-dilani-2')">
       <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
       About Dilani
-    </ion-item>
-  </div>
+    </ion-item> -->
+<!--   </div> -->
 </ion-content>
